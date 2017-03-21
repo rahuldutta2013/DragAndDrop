@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Draggable</title>
+	<link rel="stylesheet" type="text/css" href="draggable.css">		
+  </head>
+  <body>
+  <div class="center-div">
+	 <div class="draggable-div mydiv" id="draggable-div">
+	     <div id="drag1" draggable="true" ondragstart="drag(event)">1</div>
+	     <div id="drag2" draggable="true" ondragstart="drag(event)">2</div>
+	     <div id="drag3" draggable="true" ondragstart="drag(event)">3</div>
+	     <div id="drag4" draggable="true" ondragstart="drag(event)">4</div>
+	     <div id="drag5" draggable="true" ondragstart="drag(event)">5</div>
+	     <div id="drag6" draggable="true" ondragstart="drag(event)">6</div>
+	     <div id="drag7" draggable="true" ondragstart="drag(event)">7</div>
+	     <div id="drag8" draggable="true" ondragstart="drag(event)">8</div>
+	 </div>
+	 <div class="droppable-div mydiv" id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"><span id="droppedValue">0</span></div>
+	 
+  </div>
+ 
+	<script src="draggable.js"></script>
+
+  </body>
+</html>
